@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E6E6E6"
+    android:paddingLeft="12dip"
+    android:paddingRight="12dip" >
+
+    <RelativeLayout
+        android:id="@+id/pd_title_id"
+        android:layout_width="fill_parent"
+        android:layout_height="52dip"
+        android:background="#E6E6E6" >
+
+        <ImageView
+            android:id="@+id/pbt_title_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/upload_icon" />
+
+        <TextView
+            android:id="@+id/title_text_produce"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dip"
+            android:layout_toRightOf="@+id/pbt_title_icon"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#03B4E0"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/pbt_title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dip"
+            android:background="@drawable/back_btn"
+            android:padding="4dip" />
+
+       
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/xu_line_id_pd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pd_title_id"
+        android:layout_marginTop="2dip"
+        android:scaleType="centerCrop"
+        android:src="@drawable/xu_line" />
+   <ImageButton
+        android:id="@+id/btn_pro_defect"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dip"
+        android:background="@drawable/begin_btn_bg"
+        android:src="@drawable/begin_img" />   
+    <ListView
+        android:id="@+id/pro_defect_detial_list"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_pro_defect"
+        android:layout_below="@id/xu_line_id_pd"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/tabview_divider_color"
+        android:scrollbars="none"
+        android:dividerHeight="1dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginBottom="10dip"
+        android:headerDividersEnabled="false"
+        android:listSelector="#00000000" />
+    
+    
+  
+
+</RelativeLayout>

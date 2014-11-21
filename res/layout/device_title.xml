@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="52dip"
+    android:background="#E6E6E6" >
+
+    <ImageView
+        android:id="@+id/title_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/task_detail_icon" />
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dip"
+        android:layout_toRightOf="@+id/title_icon"
+        android:gravity="center"
+        android:text="@string/title_task_detail"
+        android:textColor="#03B4E0"
+        android:textSize="18sp" />
+     <Button
+            android:id="@+id/device_detail_defect_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dip"
+            android:layout_toLeftOf="@id/title_right"
+            android:background="@drawable/green_btn_bg"
+            android:padding="4dip"
+            android:text="查看历史缺陷"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/title_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="4dip"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dip"
+        android:background="@drawable/back_btn" />
+    
+    
+    <Button
+        android:id="@+id/paizhao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/device_detail_defect_btn"
+        android:layout_marginRight="23dp"
+        android:layout_toLeftOf="@+id/device_detail_defect_btn"
+        android:textStyle="bold"
+        android:background="@drawable/green_btn_bg"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:text="添加照片" />    
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">电力巡检</string>
+    <string name="title_item_detail">Item Detail</string>
+
+    <!-- 下拉/上拉刷新 -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <!-- tab title left -->
+    <string name="tab_title_task">任务列表</string>
+    <string name="tab_title_query">资料查询</string>
+    <string name="tab_title_data">资料列表</string>
+    <string name="tab_title_traject">轨迹列表</string>
+    <string name="tab_title_sys">系统设置</string>
+    <!-- globe title left -->
+    <string name="title_task_detail">任务详情</string>
+    <!-- map title left -->
+    <string name="map_title_left">任务名称：</string>
+    <string name="first">首页</string>
+    <string name="previous">上一页</string>
+    <string name="next">下一页</string>
+    <string name="last">尾页</string>
+    <string name="navigate_page">选择条件后查询</string>
+    <string name="ok">确定</string>
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="selectAll">全选</string>
+    <string name="commit">批注/提交</string>
+
+</resources>

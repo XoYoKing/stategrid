@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="58dip"
+    android:orientation="horizontal"
+    android:weightSum="1" >
+
+    <TextView
+        android:id="@+id/tabview_left"
+        android:layout_width="1dip"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="0.2"
+        android:focusable="false"
+        android:gravity="right|center_vertical"
+        android:paddingRight="12dip"
+        android:singleLine="true"
+        android:text="刘云争"
+        android:textColor="#6C7F86"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/tabview_right"
+        android:layout_width="1dip"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dip"
+        android:orientation="horizontal" >
+       
+    </LinearLayout>
+
+</LinearLayout>

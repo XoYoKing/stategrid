@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="#ffffffff">
+	
+    <include
+        android:id="@+id/title_id"
+        layout="@layout/title_bar" />
+    
+    
+    <RelativeLayout
+        android:id="@+id/tree_query_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@id/title_id"
+        android:layout_marginTop="6dip" >
+        
+
+        <EditText
+            android:id="@+id/tree_edittext"
+            android:layout_width="400dip"
+            android:layout_height="wrap_content"
+            android:hint="关键字"
+            android:inputType="none"
+            android:textColorHint="#ffb0b0b0"
+        	android:textSize="16.0sp" />
+
+        <Button
+            android:id="@+id/tree_search_btn"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dip"
+            android:layout_toRightOf="@id/tree_edittext"
+            android:background="@drawable/login_btn_bg"
+            android:contentDescription="@null"
+            android:text="搜索 "
+            android:textColor="#0079A5"
+            android:textSize="18.0sp" />
+        </RelativeLayout>
+        
+		<ListView android:id="@+id/code_list" 
+		    android:background="#ffffffff"
+		    android:layout_below="@id/tree_query_rl"
+			android:fadingEdgeLength="0.0sp" 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:drawSelectorOnTop="false"
+			android:cacheColorHint="#ffffffff" 
+			android:divider="@drawable/divider_list"
+			android:dividerHeight="2.0dip" 
+			android:fastScrollEnabled="true" 
+			android:scrollbars="none"
+			/>
+</RelativeLayout>

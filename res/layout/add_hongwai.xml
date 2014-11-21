@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="31dp"
+        android:text="设备类型" />
+
+    <TextView
+        android:id="@+id/viewbuwei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="14dp"
+        android:text="部位" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/viewbuwei"
+        android:layout_marginLeft="46dp"
+        android:layout_toRightOf="@+id/textView1" />
+
+    <EditText
+        android:id="@+id/editTextchuli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/viewChuli"
+        android:layout_alignBottom="@+id/viewChuli"
+        android:layout_alignLeft="@+id/editTextIIIlei"
+        android:ems="10"
+        android:hint="请输入处理意见" />
+
+    <TextView
+        android:id="@+id/viewBeizhu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/viewChuli"
+        android:layout_alignParentBottom="true"
+        android:text="备注" />
+
+    <EditText
+        android:id="@+id/editTextbeizhu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextchuli"
+        android:layout_alignParentBottom="true"
+        android:ems="10"
+        android:hint="请填写备注" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/viewChuli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextbeizhu"
+        android:layout_alignLeft="@+id/viewIIIlei"
+        android:text="处理意见" />
+
+    <EditText
+        android:id="@+id/editTextIIIlei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextIIlei"
+        android:layout_below="@+id/viewIIlei"
+        android:ems="10"
+        android:hint="请输入III类缺陷标准" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/spinner1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="66dp"
+        android:text="标准图谱" />
+
+    <EditText
+        android:id="@+id/editTextIlei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewbuwei"
+        android:layout_toRightOf="@+id/viewIIlei"
+        android:ems="10"
+        android:hint="请输入I类缺陷标准" />
+
+    <ImageView
+        android:id="@+id/textView10"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignTop="@+id/viewIlei"
+        android:src="@drawable/adapt_item_bg" />
+
+    <EditText
+        android:id="@+id/textViewbuwei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextIIlei"
+        android:layout_below="@+id/spinner1"
+        android:ems="10"
+        android:hint="请输入具体部位" />
+
+    <EditText
+        android:id="@+id/editTextIIlei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextIlei"
+        android:layout_below="@+id/editTextIlei"
+        android:ems="10"
+        android:hint="请输入II类缺陷标准" />
+
+    <TextView
+        android:id="@+id/viewIIlei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextIIlei"
+        android:layout_alignRight="@+id/viewIlei"
+        android:text="II类定义" />
+
+    <TextView
+        android:id="@+id/viewIIIlei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextIIIlei"
+        android:layout_alignLeft="@+id/viewIIlei"
+        android:text="III类定义" />
+
+    <TextView
+        android:id="@+id/viewIlei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextIlei"
+        android:layout_alignLeft="@+id/viewbuwei"
+        android:text="I类定义" />
+
+    <Button
+        android:id="@+id/tianjia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView10"
+        android:layout_alignParentBottom="true"
+        android:text="添加" />
+
+</RelativeLayout>

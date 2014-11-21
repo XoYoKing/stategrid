@@ -1,0 +1,82 @@
+	
+
+ String method="updateTaskList";
+		    HashMap<String,Object> params=new LinkedHashMap<String,Object>();
+		    params.put("taskList", Test.testUpdateTaskList());
+		    CallService.getData(method, params);
+
+
+public static String testUpdateTaskList(){
+		JSONArray taskArray=new JSONArray();
+		JSONObject json=new JSONObject();
+		json.put("id", 122);
+		String resid="wangy";
+		json.put("resid", resid);
+		json.put("status", "1");
+		JSONArray equipList=new JSONArray();
+		int tsid=11;//多个变电站中的一个
+		JSONObject tsJson=new JSONObject();
+		tsJson.put("tsid",tsid);
+		JSONArray recordArray=new JSONArray();
+		JSONObject recJs1=new JSONObject();
+		recJs1.put("isarrive", "已到位");
+		recJs1.put("iswell", "是");
+		recJs1.put("date", "2014-05-27 17:58:22");
+		recordArray.add(recJs1);
+		
+		
+		tsJson.put("recordList", recordArray);
+		equipList.add(tsJson);
+		json.put("equipment", equipList);
+		
+
+		
+		
+		JSONArray orbitList=new JSONArray();
+		JSONObject orb1=new JSONObject();
+		orb1.put("latitude", "34.62165");
+		orb1.put("longitude", "112.42385");
+		orb1.put("username", resid);
+		orb1.put("date", "2014-05-27 18:01:05");
+		orb1.put("msid", tsid);
+		
+		JSONObject orb2=new JSONObject();
+		orb2.put("latitude", "34.61895");
+		orb2.put("longitude", "112.42408");
+		orb2.put("username", resid);
+		orb2.put("date", "2014-05-27 18:02:05");
+		orb2.put("msid", tsid);
+		
+		JSONObject orb3=new JSONObject();
+		orb3.put("latitude", "34.61992");
+		orb3.put("longitude", "112.42661");
+		orb3.put("username", resid);
+		orb3.put("date", "2014-05-27 18:03:05");
+		orb3.put("msid", tsid);
+		
+		JSONObject orb4=new JSONObject();
+		orb4.put("latitude", "34.62109");
+		orb4.put("longitude", "112.42948");
+		orb4.put("username", resid);
+		orb4.put("date", "2014-05-27 18:04:05");
+		orb4.put("msid", tsid);
+		
+		JSONObject orb5=new JSONObject();
+		orb5.put("latitude", "34.62765");
+		orb5.put("longitude", "112.42733");
+		orb5.put("username", resid);
+		orb5.put("date", "2014-05-27 18:05:05");
+		orb5.put("msid", tsid);
+		
+		orbitList.add(orb1);
+		orbitList.add(orb2);
+		orbitList.add(orb3);
+		orbitList.add(orb4);
+		orbitList.add(orb5);
+		
+		json.put("orbitList",orbitList);
+		
+		taskArray.add(json);
+		return (taskArray.toString());
+		
+	}

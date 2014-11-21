@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E6E6E6"
+    android:paddingLeft="12dip"
+    android:paddingRight="12dip"
+    android:id="@+id/relative" >
+
+    <include
+        android:id="@+id/infrared_title_id"
+        layout="@layout/infrared_title" />
+
+    <LinearLayout
+        android:id="@+id/inf_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/infrared_title_id"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true" >
+
+        <WebView
+            android:id="@+id/inf_webView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+   
+
+</RelativeLayout>

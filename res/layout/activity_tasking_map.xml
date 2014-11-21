@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/map_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="52dip"
+        android:background="#E6E6E6" >
+
+        <TextView
+            android:id="@+id/map_title_id"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dip"
+            android:gravity="center"
+            android:text="@string/map_title_left"
+            android:textColor="#565656"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/map_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dip"
+            android:layout_toRightOf="@id/map_title_id"
+            android:gravity="center"
+            android:drawablePadding="5dip"
+            android:drawableRight="@drawable/map_title_icon"
+            android:text="二马路红旗路口电线掉落情况查看"
+            android:textColor="#545454"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dip"
+            android:background="@drawable/back_btn"
+            android:padding="4dip" />
+
+        <Button
+            android:id="@+id/history_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dip"
+            android:layout_toLeftOf="@id/title_right"
+            android:background="@drawable/history_btn_bg"
+            android:padding="4dip" />
+    </RelativeLayout>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" />
+
+</LinearLayout>

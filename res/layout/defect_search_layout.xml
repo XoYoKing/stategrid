@@ -1,0 +1,212 @@
+﻿<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6" >
+    
+    <include
+        android:id="@+id/title_id"
+        layout="@layout/title_bar" />    
+    
+
+    <RelativeLayout
+        android:id="@+id/dfs_query"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@id/title_id"
+        android:layout_marginTop="6dip" >
+        
+
+        <EditText
+            android:id="@+id/dsf_edittext"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:hint="设备名称"
+            android:inputType="none"
+            android:textColorHint="#ffb0b0b0"
+        	android:textSize="16.0sp" />
+        
+        
+        <Button
+            android:id="@+id/dsf_equip_edit"
+            android:layout_width="200dip"
+            android:layout_marginLeft="8dip"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/dsf_edittext"
+            android:text="选择设备"
+            android:textColor="#0079A5"
+        	android:textSize="18.0sp" />
+        
+        <Button
+            android:id="@+id/dsf_item_edit"
+            android:layout_width="150dip"
+            android:layout_marginLeft="8dip"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/dsf_equip_edit"
+            android:text="选择缺陷"
+            android:textColor="#0079A5"
+        	android:textSize="18.0sp" />   
+        	
+        
+
+        
+
+        <Button
+            android:id="@+id/dfs_button_level"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dip"
+            android:layout_toRightOf="@id/dsf_item_edit"
+            android:contentDescription="@null"
+            android:text="缺陷等级 "
+            android:textColor="#0079A5"
+            android:textSize="18.0sp" />
+        
+        
+        <Button
+            android:id="@+id/dfs_button"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dip"
+            android:layout_toRightOf="@id/dfs_button_level"
+            android:background="@drawable/login_btn_bg"
+            android:contentDescription="@null"
+            android:text="搜索 "
+            android:textColor="#0079A5"
+            android:textSize="18.0sp" />
+
+        <Button
+            android:id="@+id/dsf_begin_date"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dsf_edittext"
+            android:layout_alignLeft="@id/dsf_edittext"
+            android:text="开始日期"
+            android:textColor="#0079A5"
+        	android:textSize="18.0sp" />
+        
+        
+        <Button
+            android:id="@+id/dsf_end_date"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dsf_edittext"
+            android:layout_toRightOf="@id/dsf_begin_date"
+            android:text="结束日期"
+            android:layout_marginLeft="8dip"
+            android:textColor="#0079A5"
+        	android:textSize="18.0sp" />
+        
+        
+        <Button
+            android:id="@+id/button_clear"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dip"
+            android:layout_toRightOf="@id/dsf_end_date"
+            android:layout_below="@id/dsf_equip_edit"
+            android:contentDescription="@null"
+            android:text="清空"
+            android:textColor="#0079A5"
+            android:textSize="18.0sp" />        
+
+    </RelativeLayout>
+    
+    
+    <RelativeLayout
+        android:id="@+id/dfs_navigate"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@id/dfs_query"
+        android:layout_marginTop="6dip" >
+        
+        
+        <Button
+            android:id="@+id/button_navigate"
+            android:layout_width="300dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dip"
+            android:contentDescription="@null"
+            android:text="@string/navigate_page"
+            android:textColor="#0079A5"
+            android:textSize="18.0sp" />        
+        
+
+		  
+        
+        <Button
+            android:id="@+id/button_first"
+            android:layout_width="120dip"
+            android:layout_toRightOf="@id/button_navigate"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dip"
+            android:contentDescription="@null"
+            android:text="@string/first"
+            android:textColor="#0079A5"
+            android:textSize="18.0sp" />   
+            
+        <Button
+            android:id="@+id/button_previous"
+            android:layout_width="120dip"
+            android:layout_toRightOf="@id/button_first"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dip"
+            android:contentDescription="@null"
+            android:text="@string/previous"
+            android:textColor="#0079A5"
+            android:textSize="18.0sp" />
+        
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="120dip"
+            android:layout_toRightOf="@id/button_previous"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dip"
+            android:contentDescription="@null"
+            android:text="@string/next"
+            android:textColor="#0079A5"
+            android:textSize="18.0sp" />
+        
+        <Button
+            android:id="@+id/button_last"
+            android:layout_width="120dip"
+            android:layout_toRightOf="@id/button_next"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dip"
+            android:contentDescription="@null"
+            android:text="@string/last"
+            android:textColor="#0079A5"
+            android:textSize="18.0sp" /> 
+        
+        
+        
+   </RelativeLayout>    
+
+    
+
+    <com.etrust.stategrid.view.XListView
+        android:id="@+id/df_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/dfs_navigate"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dip"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="1dip"
+        android:headerDividersEnabled="false"
+        android:listSelector="#00000000" >
+    </com.etrust.stategrid.view.XListView>
+
+</RelativeLayout>

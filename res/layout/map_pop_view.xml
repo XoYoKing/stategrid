@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/popleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/pop_left_bg"
+        android:gravity="center"
+        android:paddingBottom="10dip"
+        android:text="缺陷上报"
+        android:textColor="#001000"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/popright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/pop_right_bg"
+        android:gravity="center"
+        android:paddingBottom="10dip"
+        android:text="任务单"
+        android:textColor="#001000"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

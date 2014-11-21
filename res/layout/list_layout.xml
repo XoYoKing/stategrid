@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6" >
+
+    <com.etrust.stategrid.view.XListView
+        android:id="@+id/list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/query_praent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dip"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="1dip"
+        android:headerDividersEnabled="false"
+        android:listSelector="#00000000" >
+    </com.etrust.stategrid.view.XListView>
+
+</RelativeLayout>

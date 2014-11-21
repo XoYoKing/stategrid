@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="18dip" >
+
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="110dip"
+        android:layout_marginTop="6dip"
+        android:background="@drawable/adapt_item_bg"
+        android:paddingLeft="20dip"
+        android:paddingRight="18dip" >
+
+        <TextView
+            android:id="@+id/padding_view_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/task_nor"
+            android:gravity="center"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/sys_first_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="4dp"
+            android:text="当前坐标"
+            android:textColor="#7BA424"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/sys_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sys_first_title"
+            android:layout_toRightOf="@+id/padding_view_id"
+            android:layout_marginTop="6dp"
+            android:text="维度:"
+            android:textColor="#555555"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/sys_lat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/sys_log"
+            android:layout_below="@+id/sys_log"
+            android:layout_marginTop="6dp"
+            android:text="纬度:"
+            android:textColor="#555555"
+            android:textSize="16sp" />
+    </RelativeLayout>
+      
+    
+
+    <include
+        android:id="@+id/set_coordinate_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativelayout"
+        android:layout_marginTop="8dp"
+        layout="@layout/adapter_tasklist" />
+
+    
+	<include
+        android:id="@+id/update_data_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/set_coordinate_btn"
+        android:layout_marginTop="8dp"
+        layout="@layout/adapter_tasklist" />
+	
+    <ImageButton
+        android:id="@+id/sys_cancle_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/cancle_btn_bg"
+        android:src="@drawable/cancle_img" />
+
+</RelativeLayout>

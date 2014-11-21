@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#66000000" >
+
+    <RelativeLayout
+        android:id="@+id/title_sift"
+        android:layout_width="350dip"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="53dip" >
+
+        <TextView
+            android:id="@+id/title_sift_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/pop_title_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="任务操作"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/deveder_id"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@id/title_sift_title"
+            android:background="#1AA1EA" />
+
+        <LinearLayout
+            android:id="@+id/btns_ly_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/deveder_id"
+            android:background="#fff"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/puase_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:background="#FFFFFF"
+                android:text="暂停当前任务"
+                android:textColor="#5D5D5D"
+                android:textSize="18.0sp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pop_line" />
+
+            <Button
+                android:id="@+id/destory_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:background="#FFFFFF"
+                android:text="终止当前任务"
+                android:textColor="#5D5D5D"
+                android:textSize="18.0sp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pop_line" />
+
+            <Button
+                android:id="@+id/over_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:background="#FFFFFF"
+                android:text="结束当前任务"
+                android:textColor="#5D5D5D"
+                android:textSize="18.0sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/close_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="68dip"
+            android:layout_below="@id/btns_ly_id"
+            android:background="@drawable/close_btn_bg"
+            android:text="关闭"
+            android:textColor="#0079A5"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

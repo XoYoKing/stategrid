@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_bg" >
+
+    <EditText
+        android:id="@+id/username_editText"
+        android:layout_width="238dip"
+        android:layout_height="46dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="140dip"
+        android:layout_marginLeft="190dip"
+        android:completionThreshold="2"
+        android:drawableLeft="@drawable/login_icon_user"
+        android:drawablePadding="8dp"
+        android:dropDownHeight="200.0dip"
+        android:dropDownVerticalOffset="5.0dip"
+        android:gravity="center_vertical"
+        android:hint="请输入用户名"
+        android:imeOptions="actionNext"
+        android:includeFontPadding="false"
+        android:inputType="textEmailAddress"
+        android:maxLength="200"
+        android:maxLines="1"
+        android:paddingLeft="8.0dip"
+        android:singleLine="true"
+        android:textColorHint="#ffb0b0b0"
+        android:textSize="16.0sp" />
+
+    <EditText
+        android:id="@+id/password_editText"
+        android:layout_width="238dip"
+        android:layout_height="46dip"
+        android:layout_toRightOf="@id/username_editText"
+        android:layout_alignTop="@id/username_editText"
+        android:layout_marginLeft="10dip"
+        android:drawableLeft="@drawable/login_icon_psd"
+        android:drawablePadding="8dp"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:hint="请输入密码"
+        android:imeOptions="actionNext"
+        android:inputType="textPassword"
+        android:maxLength="200"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="10.0dip"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textColorHint="#ffb0b0b0"
+        android:textSize="16.0sp" />
+
+    <Button
+        android:id="@+id/next_step_button"
+        android:layout_width="140dip"
+        android:layout_height="45dip"
+       	android:layout_toRightOf="@id/password_editText"
+        android:layout_alignTop="@id/username_editText"
+        android:layout_marginLeft="12dip"
+        android:background="@drawable/login_btn_bg"
+        android:text="登录"
+        android:textColor="#0079A5"
+        android:textSize="18.0sp" />
+
+</RelativeLayout>

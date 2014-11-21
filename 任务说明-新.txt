@@ -1,0 +1,46 @@
+[
+	{
+		"id":56,
+		"name":"五一巡检",--任务名称
+		"resid":"wangy",--负责人
+		"resname":"王一",--负责人姓名
+		"accid":"songl",--陪同人
+		"accname":"宋磊",--陪同人姓名
+		"range":50,--定位精度
+		"status":1,--0 未开始 1 进行中 2 已终止 3 已结束 4 已暂停
+		"groupid":16,--巡检部门
+		"begintime":"2014-04-29",--任务开始日期
+		"enddate":"2014-05-03",--任务结束日期
+		"instruction":"",--任务简术
+		"type":1
+		"equipment":--巡检设备集合，主要是变电站
+		[
+				{
+				"tsid":9,--变电站ID
+				"tsname":"安全中心变电站",--变电站名称
+				"latitude":34.83106,--变电站纬度
+				"longitude":113.564843,--径度
+				"msid":5,--所属运维站ID-新增
+				"ms_name":"高新区运维站",--所属运维站-新增
+				"recordList":--巡检历史-新增，是对象数组
+				[
+                                  {
+                                   "date":"2014-02-17",--到位日期
+				   "isarrive":"已到位/未到位",
+				   "iswell":"是/否",
+                                   "status":"0"-- 0 未到位  2 已到位（status 新增的字段）==========
+
+                                   }
+				]
+				--"status":"0" --2 已到位 0 未到位，去掉这个字段，转移到recordList 里面=========
+				}
+		],
+		"orbitList":--默认巡检轨迹-新增，对象数组
+		[
+			{"latitude":"34.831463","longitude":"113.564723","date":"2014-04-30 09:23:04","username":"wangy"},
+			{"latitude":"34.831149","longitude":"113.564862","date":"2014-04-30 09:24:04","username":"wangy"}
+		]
+	}
+]
+latitude：纬度
+longitude：径度

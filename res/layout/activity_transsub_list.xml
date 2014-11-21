@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E6E6E6"
+    android:paddingLeft="12dip"
+    android:paddingRight="12dip" >
+
+    <include
+        android:id="@+id/title_id"
+        layout="@layout/title_bar" />
+
+    <ImageView
+        android:id="@+id/xu_line_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_id"
+        android:layout_marginTop="2dip"
+        android:scaleType="centerCrop"
+        android:src="@drawable/xu_line" />
+
+    <com.etrust.stategrid.view.XListView
+        android:id="@+id/list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/xu_line_id"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="6dip"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="1dip"
+        android:headerDividersEnabled="false"
+        android:listSelector="#00000000" >
+    </com.etrust.stategrid.view.XListView>
+
+</RelativeLayout>

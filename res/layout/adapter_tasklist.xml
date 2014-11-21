@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/adapt_item_bg"
+    android:paddingBottom="10dip"
+    android:paddingLeft="20dip"
+    android:paddingRight="18dip"
+    android:paddingTop="10dip" >
+
+    <TextView
+        android:id="@+id/tasklist_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/task_nor"
+        android:gravity="center"
+        android:text="未开始"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tasklist_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tasklist_state"
+        android:text="二马路红旗路口电线掉落情况查看"
+        android:textColor="#555555"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tasklist_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tasklist_title"
+        android:layout_below="@+id/tasklist_title"
+        android:text="开始时间 2014-01-23 截至时间2014-01-29"
+        android:textColor="#909090"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/arrow_right" />
+
+</RelativeLayout>

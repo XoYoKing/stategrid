@@ -1,0 +1,32 @@
+{
+	"DataDevice":[
+		{"id":1,"name":"yunweuzhan1","desc":"ceshiyunweizhan1","transSub":[
+			{"id":1,"name":"1#biandianzhan","latitude":34.83106,"longitude":113.564843,"device":[
+				{"id":80,"name":"11","url":"/equipment/content?id=80","defect":[
+					{"id":27,"item":"www","itemCategory":"jueyuanzi","bugLevel":"yibanquexian",
+					"dealType":"zixingchuli","description":"bbbbbhhhhhjjjjjj",
+					"createDate":"2014-03-22","creatorid":"","executorid":"","attach":[
+						{"url":"/fileOperate/download?filename=201403220125246202063122282.amr",
+						"realName":"1395422678922.amr","suffux":"amr"
+						},
+						{"url":"/fileOperate/download?filename=2014032201252910759420003629.jpg",
+						"realName":"IMG_20140312_003723.jpg","suffux":"jpg"
+						},
+						{"url":"/fileOperate/download?filename=201403220125442883223695522.3gp",
+						"realName":"VID_20140322_002500.3gp","suffux":"3gp"
+						}
+					]
+					}
+				]},
+				{"id":81,"name":"11","url":"/equipment/content?id=81","defect":[]},
+				{"id":82,"name":"11","url":"/equipment/content?id=82","defect":[]},
+				{"id":96,"name":"1","url":"/equipment/content?id=96","defect":[]}]
+			},
+		]}
+	],
+	"Infrared":[
+		{"id":25,"name":"ceshi","url":"/raz/content?id=25"},
+		{"id":27,"name":"test_0011","url":"/raz/content?id=27"},
+		{"id":29,"name":"test_0011","url":"/raz/content?id=29"}
+	]
+}

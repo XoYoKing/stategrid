@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E6E6E6" >
+
+    <RadioGroup
+        android:id="@+id/main_tab_group"
+        android:layout_width="100dip"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/tab_task_manage"
+            style="@style/TabGroupButton"
+            android:background="@drawable/tab_task_btn"
+            android:checked="true" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tab_line" />
+
+        <RadioButton
+            android:id="@+id/tab_data_query"
+            style="@style/TabGroupButton"
+            android:background="@drawable/tab_query_btn" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tab_line" />
+
+        <RadioButton
+            android:id="@+id/tab_data_manage"
+            style="@style/TabGroupButton"
+            android:background="@drawable/tab_data_btn" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tab_line" />
+
+      <RadioButton
+            android:id="@+id/tab_trajectory_manage"
+            style="@style/TabGroupButton"
+            android:background="@drawable/tab_traject_btn" />
+  
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tab_line" />
+ <RadioButton
+            android:id="@+id/tab_system_set"
+            style="@style/TabGroupButton"
+            android:background="@drawable/tab_system_btn" />
+       
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/tab_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="52dip"
+        android:layout_marginLeft="12dip"
+        android:layout_toRightOf="@id/main_tab_group" >
+
+        <ImageView
+            android:id="@+id/tab_title_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/task_lab_icon" />
+
+        <TextView
+            android:id="@+id/tab_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dip"
+            android:layout_toRightOf="@+id/tab_title_icon"
+            android:gravity="center"
+            android:text="@string/tab_title_task"
+            android:textColor="#03B4E0"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tab_title_user"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dip"
+            android:gravity="center"
+            android:text="5班6组 刘云争"
+            android:textColor="#03B4E0"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/xu_line_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dip"
+        android:layout_alignLeft="@id/tab_title_bar"
+        android:layout_below="@id/tab_title_bar"
+        android:scaleType="centerCrop"
+        android:src="@drawable/xu_line" />
+
+    <FrameLayout
+        android:id="@+id/tab_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@id/tab_title_bar"
+        android:layout_below="@id/xu_line_id" >
+
+        <com.etrust.stategrid.view.LucienViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.etrust.stategrid.view.LucienViewPager>
+    </FrameLayout>
+
+</RelativeLayout>
